@@ -1,0 +1,56 @@
+[
+    {
+      "label": "What is Hello in spanish?",
+      "choices": [
+        {"value": "Au revoir", "correct": false},
+        {"value": "Hola", "correct": true},
+        {"value": "Tant pis", "correct": false},
+        {"value": "Salut!", "correct": false}
+      ]
+    },
+    {
+      "label": "What is Good Morning in spanish?",
+      "choices": [
+        {"value": "Buenos Dias", "correct": true},
+        {"value": "Bonjour", "correct": false},
+        {"value": "Tant pis", "correct": false},
+        {"value": "Salut!", "correct": false}
+      ]
+    },
+    {
+        "label": "What is Good Evening in spanish?",
+        "choices": [
+          {"value": "Au revoir", "correct": false},
+          {"value": "Buenos Tarde", "correct": true},
+          {"value": "Tant pis", "correct": false},
+          {"value": "Salut!", "correct": false}
+        ]
+      },
+      {
+        "label": "What is Good Night in spanish?",
+        "choices": [
+          {"value": "Buenos Noches", "correct": true},
+          {"value": "Bonjour", "correct": false},
+          {"value": "Tant pis", "correct": false},
+          {"value": "Salut!", "correct": false}
+        ]
+      },
+      {
+        "label": "How do you call friend in spanish?",
+        "choices": [
+          {"value": "Au revoir", "correct": false},
+          {"value": "Hola", "correct": false},
+          {"value": "Amigo", "correct": true},
+          {"value": "Salut!", "correct": false}
+        ]
+      },
+      {
+        "label": "What is Sunday in spanish?",
+        "choices": [
+          {"value": "Adios", "correct": false},
+          {"value": "Bonjour", "correct": false},
+          {"value": "Tant pis", "correct": false},
+          {"value": "Domingo", "correct": true}
+        ]
+      }
+  ]
