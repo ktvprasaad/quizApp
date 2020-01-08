@@ -1,3 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: '<router-outlet></router-outlet>'
+})
+
+export class AppComponent{}
+
 // import { Component } from '@angular/core';
 
 // @Component({
@@ -8,40 +17,41 @@
 // export class AppComponent {
 //   title = 'quizApp';
 // }
-import { Component } from '@angular/core';
-import { QuestionsService } from '../questions.service';
-import { Quiz, Answers, Choice } from '../quiz.model';
+// Task 3.7
+// import { Component } from '@angular/core';
+// import { QuestionsService } from '../questions.service';
+// import { Quiz, Answers, Choice } from '../quiz.model';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  private answers: Answers;
-  private quiz: Quiz;
-  private currentQuestionIndex: number;
-  private showResults = false;
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.scss']
+// })
+// export class AppComponent {
+//   private answers: Answers;
+//   private quiz: Quiz;
+//   private currentQuestionIndex: number;
+//   private showResults = false;
 
-  constructor(private questionsService: QuestionsService ) {
-    this.questionsService.getJSON('spanish').subscribe(data => {
+//   constructor(private questionsService: QuestionsService ) {
+//     this.questionsService.getJSON('spanish').subscribe(data => {
 
-      this.quiz = new Quiz('spanish', data);
-      this.answers = new Answers();
-      this.currentQuestionIndex = 0;
-    });
-  }
+//       this.quiz = new Quiz('spanish', data);
+//       this.answers = new Answers();
+//       this.currentQuestionIndex = 0;
+//     });
+//   }
 
-  updateChoice(choice: Choice) {
-    this.answers.values[this.currentQuestionIndex] = choice;
-  }
+//   updateChoice(choice: Choice) {
+//     this.answers.values[this.currentQuestionIndex] = choice;
+//   }
 
-  nextOrViewResults() {
-    if (this.currentQuestionIndex === this.quiz.questions.length - 1) {
-      this.showResults = true;
-      return;
-    }
+//   nextOrViewResults() {
+//     if (this.currentQuestionIndex === this.quiz.questions.length - 1) {
+//       this.showResults = true;
+//       return;
+//     }
 
-    this.currentQuestionIndex++;
-  }
-}
+//     this.currentQuestionIndex++;
+//   }
+// }
