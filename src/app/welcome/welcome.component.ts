@@ -13,7 +13,7 @@ import { Quiz } from '../../quiz.model';
 })
 export class WelcomeComponent implements OnInit {
 
-  private quizzes: Quiz[];
+  quizzes: Quiz[];
 
   //inject both the active route and the questions service
   constructor(private route: ActivatedRoute, private questionsService: QuestionsService) { }
