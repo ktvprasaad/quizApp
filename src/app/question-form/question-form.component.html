@@ -1,11 +1,25 @@
-<div class="quiz" *ngIf="question">
+<mat-card class="quiz" *ngIf="question">
     <h1>{{question.label}}</h1>
     <form [formGroup]="form">
-      <div class="form-group">
+      <ul class="form-group">
         <label *ngFor="let choice of question.choices">
-          <input type="radio" [value]="choice" formControlName="choice">
-          <span>{{choice.value}}</span>
+            <li>
+                <input type="radio" [value]="choice" formControlName="choice">
+                <span>{{choice.value}}</span>
+            </li>   
         </label>
-      </div>
+      </ul>
     </form>
-  </div>
+</mat-card>
+
+<!-- <h1>Welcome to QuizApp!!</h1>
+<h4>Ready to take a quiz? Choose your topic of interest</h4>
+<mat-card class="example-card" *ngFor="let quiz of quizzes">   
+    <mat-card-header>
+        <img mat-card-avatar class="example-header-image"/>
+        <mat-card-title>
+            <a routerLink="/{{quiz.name}}" class="btn btn-primary">{{quiz.label}}</a>
+        </mat-card-title>
+        <mat-card-subtitle>{{quiz.description}}</mat-card-subtitle> 
+    </mat-card-header> 
+</mat-card> -->

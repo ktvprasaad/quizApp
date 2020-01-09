@@ -1,0 +1,16 @@
+
+div, h2, button {
+  font-family: 'Courgette', cursive;
+}
+
+a, button {
+    margin: 10px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.correct {
+    background-color: lightgreen;
+    max-width: 100px;
+}

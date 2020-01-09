@@ -1,11 +1,15 @@
-
-.example-card {  
-    max-width: 300px; 
-    max-height: 300px;
-    margin: 10px;
-    display: inline-block;
+h1, h4, mat-card {
+    font-family: 'Courgette', cursive;
+    text-align: center;
 }
-.example-header-image {  
-    background-image: url(`./assets/math.png`);
-    background-size: cover;
+.example-card {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;   
+}
+.example-header-image {
+    background-image: url('../../assets/math.png');
+    background-size: cover;
 }

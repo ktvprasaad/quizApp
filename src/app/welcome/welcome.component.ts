@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+// import { NgModule } from '@angular/core';
+// import { MatCardModule } from '@angular/material';
 
 import { QuestionsService } from '../../questions.service';
 import { Quiz } from '../../quiz.model';
